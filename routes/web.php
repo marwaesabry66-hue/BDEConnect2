@@ -19,9 +19,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/historique', [InscriptionController::class, 'historique'])->name('inscriptions.historique');
 });
 
+// Had l'group khass ghir b l'Admin (RG6)
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::resource('evenements', EvenementController::class);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    
+    // Zidi had la route dial l'export CSV hna:
+    Route::get('/evenements/{evenement}/export', [EvenementController::class, 'exportCSV'])->name('evenements.export');
 });
 
 require __DIR__.'/auth.php';
