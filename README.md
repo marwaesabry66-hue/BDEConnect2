@@ -12,3 +12,11 @@ Application web de gestion d'événements pour le Bureau Des Étudiants (BDE), p
 1. **Cloner le projet :**
    ```bash
    git clone [https://github.com/marwaesabry66-hue/BDEConnect2.git](https://github.com/marwaesabry66-hue/BDEConnect2.git)
+   ---
+## 👤 Réalisation de la Partie 5 : Dashboard & Export (Marwa)
+Dans le cadre de ce projet, j'ai pris en charge le développement du module administratif et de suivi :
+
+* **Dashboard Admin :** Mise en place d'une interface de statistiques en temps réel (Total événements, inscriptions confirmées, liste d'attente).
+* **Top 3 Événements :** Logique d'affichage des événements ayant le plus de succès.
+* **Export CSV (Objectif 1.2) :** Développement de la fonctionnalité d'extraction des listes de présence pour le pointage physique du BDE.
+* **Validation RG :** Implémentation de la sécurité pour limiter l'accès aux statistiques uniquement aux administrateurs.
